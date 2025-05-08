@@ -5,17 +5,36 @@ public class Targets : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private Rigidbody targetRB;
+    private float minSpeed = 12;
+    private float maxSpeed = 16;
+    private float maxTorgue = 10;
+    private float xRange = 4;
+    private float ySpawnPos = -6;
     void Start()
     {
         targetRB = GetComponent<Rigidbody>();
-        targetRB.AddForce(Vector3.up * Random.Range(12, 16), ForceMode.Impulse);
-        targetRB.AddTorque(Random.Range(-10, 10), Random.Range(-10, 10), Random.Range(-10, 10), ForceMode.Impulse);
-        transform.position = new Vector3(Random.Range(-4, 4), -6);
+        targetRB.AddForce(RandomForce(), ForceMode.Impulse);
+        targetRB.AddTorque(RandomTorgue(), RandomTorgue(), RandomTorgue(), ForceMode.Impulse);
+        transform.position = RandomSpawnPoint();
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    Vector3 RandomForce()
+    {
+        return Vector3.up * Random.Range(minSpeed, maxSpeed);
+    }
+
+    float RandomTorgue()
+    {
+        return Random.Range(-maxTorgue, maxTorgue);
+    }
+    Vector3 RandomSpawnPoint()
+    {
+        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos);
     }
 }
