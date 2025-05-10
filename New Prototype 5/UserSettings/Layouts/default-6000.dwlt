@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 989
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -971,7 +971,7 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8e830000
+      m_SelectedIDs: 
       m_LastClickedID: 0
       m_ExpandedIDs: 26fbffff
       m_RenameOverlay:
@@ -1044,7 +1044,8 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SkipHidden: 0
     m_SearchArea: 1
-    m_Folders: []
+    m_Folders:
+    - Assets/Scripts
     m_Globs: []
     m_ProductIds: 
     m_AnyWithAssetOrigin: 0
@@ -1062,7 +1063,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b0230000
     m_LastClickedID: 9136
-    m_ExpandedIDs: 00000000788000007a8000007c8000007e80000080800000828000008480000086800000888000008a8000008c800000
+    m_ExpandedIDs: 0000000080800000828000008480000086800000888000008a8000008c8000008e800000908000009280000094800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1091,21 +1092,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000788000007a8000007c8000007e80000080800000828000008480000086800000888000008a8000008c800000
+    m_ExpandedIDs: ffffffff0000000080800000828000008480000086800000888000008a8000008c8000008e800000908000009280000094800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GameManager
-      m_OriginalName: GameManager
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 33678
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_TrimLeadingAndTrailingWhitespace: 0
       m_ClientGUIView: {fileID: 10}
