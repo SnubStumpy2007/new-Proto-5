@@ -10,6 +10,7 @@ public class Targets : MonoBehaviour
     private float maxTorgue = 10;
     private float xRange = 4;
     private float ySpawnPos = -6;
+    private GameManager gameManager;
     void Start()
     {
         targetRB = GetComponent<Rigidbody>();
