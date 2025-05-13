@@ -1032,11 +1032,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df5bec3afebe7ac46833d427c104443c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Score: 0
   Targets:
   - {fileID: 244388043}
   - {fileID: 1157904616}
   - {fileID: 1301442641}
   - {fileID: 2023184433}
+  ScoreText: {fileID: 0}
 --- !u!1 &1982587787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1094,7 +1096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Score
+  m_text: 'Score:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ff9dfb9dcfa9b451da0749c3d2b449a9, type: 2}
   m_sharedMaterial: {fileID: 21956123629259200, guid: ff9dfb9dcfa9b451da0749c3d2b449a9, type: 2}

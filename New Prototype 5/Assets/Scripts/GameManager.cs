@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public int Score;
     public List<GameObject> Targets;
-    public TextMeshProUGUI ScoreText;
+    public TextMeshPro ScoreText;
     private float SpawnRate = 1.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(SpawnTarget());
         Score = 0;
-        UpdateScore(0);
+        ScoreText.text = "Score: " + Score;
     }
 
     // Update is called once per frame
@@ -25,11 +25,11 @@ public class GameManager : MonoBehaviour
         
     }
 
-    public void UpdateScore(int ScoreToAdd)
-    {
-        Score += ScoreToAdd;
-        ScoreText.text = "Score: " + Score;
-    }
+    //public void UpdateScore(int ScoreToAdd)
+    //{
+    //    Score += ScoreToAdd;
+    //    ScoreText.text = "Score: " + Score;
+    //}
 
     IEnumerator SpawnTarget()
     {
@@ -37,6 +37,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(SpawnRate);
             int index = Random.Range(0, Targets.Count);
             Instantiate(Targets[index]);
+           // UpdateScore(5);
         }
     }
 }
