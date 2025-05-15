@@ -9,7 +9,7 @@ public class Targets : MonoBehaviour
     private float maxSpeed = 16;
     private float maxTorgue = 10;
     private float xRange = 4;
-    private float ySpawnPos = -6;
+    private float ySpawnPos = -2;
     private GameManager gameManager;
     void Start()
     {
@@ -28,6 +28,7 @@ public class Targets : MonoBehaviour
     private void OnMouseDown()
     {
         Destroy(gameObject);
+        Debug.Log("Clicked");
     }
 
     private void OnTriggerEnter(Collider other)

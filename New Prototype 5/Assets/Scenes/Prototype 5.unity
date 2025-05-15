@@ -1038,7 +1038,7 @@ MonoBehaviour:
   - {fileID: 1157904616}
   - {fileID: 1301442641}
   - {fileID: 2023184433}
-  ScoreText: {fileID: 0}
+  ScoreText: {fileID: 1982587789}
 --- !u!1 &1982587787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1051,7 +1051,7 @@ GameObject:
   - component: {fileID: 1982587790}
   - component: {fileID: 1982587789}
   m_Layer: 5
-  m_Name: Score
+  m_Name: 'Score '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1330,12 +1330,12 @@ SceneRoots:
   - {fileID: 534669905}
   - {fileID: 170076735}
   - {fileID: 1829648831}
-  - {fileID: 494445612}
   - {fileID: 1611319334}
   - {fileID: 244388042}
   - {fileID: 1157904615}
   - {fileID: 1301442640}
   - {fileID: 2023184432}
+  - {fileID: 494445612}
   - {fileID: 1948527582}
   - {fileID: 795569260}
   - {fileID: 224093608}
