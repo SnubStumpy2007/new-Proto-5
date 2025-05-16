@@ -998,8 +998,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1948527582}
   - component: {fileID: 1948527583}
+  - component: {fileID: 1948527584}
   m_Layer: 0
-  m_Name: GameManger
+  m_Name: Game Manger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1038,6 +1039,21 @@ MonoBehaviour:
   - {fileID: 1157904616}
   - {fileID: 1301442641}
   - {fileID: 2023184433}
+  ScoreText: {fileID: 1982587789}
+--- !u!114 &1948527584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1948527581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df5bec3afebe7ac46833d427c104443c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Score: 0
+  Targets: []
   ScoreText: {fileID: 1982587789}
 --- !u!1 &1982587787
 GameObject:

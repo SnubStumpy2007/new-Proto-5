@@ -5,18 +5,21 @@ public class Targets : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private Rigidbody targetRB;
+    public GameManager gameManager;
     private float minSpeed = 12;
     private float maxSpeed = 16;
-    private float maxTorgue = 10;
+    private float maxTorque = 10;
     private float xRange = 4;
     private float ySpawnPos = -2;
-    private GameManager gameManager;
+    
     void Start()
     {
         targetRB = GetComponent<Rigidbody>();
         targetRB.AddForce(RandomForce(), ForceMode.Impulse);
-        targetRB.AddTorque(RandomTorgue(), RandomTorgue(), RandomTorgue(), ForceMode.Impulse);
+        targetRB.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
         transform.position = RandomSpawnPoint();
+
+        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -27,8 +30,10 @@ public class Targets : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Destroy(gameObject);
-        Debug.Log("Clicked");
+         Destroy(gameObject);
+        //Debug.Log("Clicked");
+         gameManager.UpdateScore(5);
+
     }
 
     private void OnTriggerEnter(Collider other)
@@ -41,9 +46,9 @@ public class Targets : MonoBehaviour
         return Vector3.up * Random.Range(minSpeed, maxSpeed);
     }
 
-    float RandomTorgue()
+    float RandomTorque()
     {
-        return Random.Range(-maxTorgue, maxTorgue);
+        return Random.Range(-maxTorque, maxTorque);
     }
     Vector3 RandomSpawnPoint()
     {
