@@ -11,6 +11,9 @@ public class Targets : MonoBehaviour
     private float maxTorque = 10;
     private float xRange = 4;
     private float ySpawnPos = -2;
+
+    public int pointValue;
+    public ParticleSystem explosionParticle;
     
     void Start()
     {
@@ -32,8 +35,8 @@ public class Targets : MonoBehaviour
     {
         
         Destroy(gameObject);
-        //Debug.Log("Clicked");
-        gameManager.UpdateScore(5);
+        gameManager.UpdateScore(pointValue);
+        Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
 
     }
 
