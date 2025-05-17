@@ -19,7 +19,7 @@ public class Targets : MonoBehaviour
         targetRB.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
         transform.position = RandomSpawnPoint();
 
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -30,9 +30,10 @@ public class Targets : MonoBehaviour
 
     private void OnMouseDown()
     {
-         Destroy(gameObject);
+        
+        Destroy(gameObject);
         //Debug.Log("Clicked");
-         gameManager.UpdateScore(5);
+        gameManager.UpdateScore(5);
 
     }
 

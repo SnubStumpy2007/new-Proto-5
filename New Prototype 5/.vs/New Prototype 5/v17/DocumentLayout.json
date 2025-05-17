@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\joshu\\Documents\\Unity\\new-Proto-5\\New Prototype 5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1AE5F36A-0B8A-0A90-245D-751F4C76FECE}|Assembly-CSharp.csproj|c:\\users\\joshu\\documents\\unity\\new-proto-5\\new prototype 5\\assets\\scripts\\targets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1AE5F36A-0B8A-0A90-245D-751F4C76FECE}|Assembly-CSharp.csproj|C:\\Users\\joshu\\Documents\\Unity\\new-Proto-5\\New Prototype 5\\assets\\scripts\\targets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AE5F36A-0B8A-0A90-245D-751F4C76FECE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\targets.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1AE5F36A-0B8A-0A90-245D-751F4C76FECE}|Assembly-CSharp.csproj|C:\\Users\\joshu\\Documents\\Unity\\new-Proto-5\\New Prototype 5\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{1AE5F36A-0B8A-0A90-245D-751F4C76FECE}|Assembly-CSharp.csproj|c:\\users\\joshu\\documents\\unity\\new-proto-5\\new prototype 5\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1AE5F36A-0B8A-0A90-245D-751F4C76FECE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -28,7 +28,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Targets.cs",
               "ToolTip": "C:\\Users\\joshu\\Documents\\Unity\\new-Proto-5\\New Prototype 5\\Assets\\Scripts\\Targets.cs",
               "RelativeToolTip": "Assets\\Scripts\\Targets.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwCIAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-08T00:39:29.99Z",
               "EditorCaption": ""
