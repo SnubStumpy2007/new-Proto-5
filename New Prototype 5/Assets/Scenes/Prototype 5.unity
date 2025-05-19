@@ -499,7 +499,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &711973865
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1177,6 +1177,7 @@ MonoBehaviour:
   - {fileID: 1301442641}
   - {fileID: 2023184433}
   ScoreText: {fileID: 1982587789}
+  GameOverText: {fileID: 0}
 --- !u!114 &1948527584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,6 +1193,7 @@ MonoBehaviour:
   Score: 0
   Targets: []
   ScoreText: {fileID: 1982587789}
+  GameOverText: {fileID: 0}
 --- !u!1 &1982587787
 GameObject:
   m_ObjectHideFlags: 0

@@ -27,6 +27,13 @@ public class GameManager : MonoBehaviour
         
     }
 
+    public void GameOver()
+    {
+        GameOverText.gameObject.SetActive(true);
+    }
+
+    
+
     public void UpdateScore(int ScoreToAdd)
     {
         Score += ScoreToAdd;
