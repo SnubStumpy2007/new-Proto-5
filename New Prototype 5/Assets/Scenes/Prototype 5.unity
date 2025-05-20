@@ -494,7 +494,7 @@ GameObject:
   - component: {fileID: 711973867}
   - component: {fileID: 711973866}
   m_Layer: 5
-  m_Name: Game Over
+  m_Name: GameOverText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1177,7 +1177,7 @@ MonoBehaviour:
   - {fileID: 1301442641}
   - {fileID: 2023184433}
   ScoreText: {fileID: 1982587789}
-  GameOverText: {fileID: 0}
+  GameOverText: {fileID: 711973866}
 --- !u!114 &1948527584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1193,7 +1193,7 @@ MonoBehaviour:
   Score: 0
   Targets: []
   ScoreText: {fileID: 1982587789}
-  GameOverText: {fileID: 0}
+  GameOverText: {fileID: 711973866}
 --- !u!1 &1982587787
 GameObject:
   m_ObjectHideFlags: 0

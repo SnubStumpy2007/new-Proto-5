@@ -23,6 +23,8 @@ public class Targets : MonoBehaviour
         transform.position = RandomSpawnPoint();
 
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
+        //testing to see if it calls.  It doesn't
+        //gameManager.GameOver();
     }
 
     // Update is called once per frame
@@ -37,17 +39,21 @@ public class Targets : MonoBehaviour
         Destroy(gameObject);
         gameManager.UpdateScore(pointValue);
         Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
-
+        //if (!gameObject.CompareTag("Bad"))
+        //{
+        //    gameManager.GameOver();
+        //}
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    Destroy(gameObject);
-    //    if (!gameObject.CompareTag("Bad"))
-    //    {
-    //        gameManager.GameOver();
-    //    }
-    //}
+    private void OnTriggerEnter(Collider other)
+    {
+        //Debug.Log($"{gameObject.name} hit the trigger.  Tag = {gameObject.tag}");
+        Destroy(gameObject);
+        if (!gameObject.CompareTag("Bad"))
+        {
+            gameManager.GameOver();
+        }
+    }
 
     Vector3 RandomForce()
     {
