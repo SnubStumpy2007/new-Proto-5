@@ -3,6 +3,8 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -11,6 +13,8 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI ScoreText;
     public TextMeshProUGUI GameOverText;
     private float SpawnRate = 1.0f;
+    public bool isGameActive;
+    public Button restartButton;
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,6 +22,7 @@ public class GameManager : MonoBehaviour
     {
         StartCoroutine(SpawnTarget());
         Score = 0;
+        isGameActive = true;
 
         //Testing
         //GameOver();
@@ -33,6 +38,8 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("GameOver() called — enabling GameOverText");
         GameOverText.gameObject.SetActive(true);
+        isGameActive = false;
+        restartButton.gameObject.SetActive(true);
     }
 
 
@@ -45,11 +52,16 @@ public class GameManager : MonoBehaviour
 
     IEnumerator SpawnTarget()
     {
-        while (true) { 
+        while (isGameActive) { 
             yield return new WaitForSeconds(SpawnRate);
             int index = Random.Range(0, Targets.Count);
             Instantiate(Targets[index]);
             //UpdateScore(5);
         }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
