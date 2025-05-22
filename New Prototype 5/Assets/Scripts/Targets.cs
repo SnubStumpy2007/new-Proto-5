@@ -25,7 +25,7 @@ public class Targets : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         //testing to see if it calls.  It doesn't
         //gameManager.GameOver();
-        Debug.Log($"{gameObject.name} spawned at {transform.position}");
+        //Debug.Log($"{gameObject.name} spawned at {transform.position}");
     }
 
     // Update is called once per frame
@@ -36,10 +36,12 @@ public class Targets : MonoBehaviour
 
     private void OnMouseDown()
     {
+        Debug.Log($"{gameObject.name} clicked!");
+
         if (gameManager.isGameActive)
         {
             Destroy(gameObject);
-            //gameManager.UpdateScore(pointValue);
+            Debug.Log("Instantiating explosion particle at " + transform.position);
             Instantiate(explosionParticle, transform.position, explosionParticle.transform.rotation);
             if (gameObject.CompareTag("Bad"))
             {

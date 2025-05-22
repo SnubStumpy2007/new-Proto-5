@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: -805744635115904274}
   - component: {fileID: -7039048823937381770}
   - component: {fileID: 3760978249665130361}
-  - component: {fileID: 6947358832155334883}
   m_Layer: 0
   m_Name: Soccer
   m_TagString: Player
@@ -153,15 +152,3 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.30960658, y: 0.29509434, z: 0.30383658}
   m_Center: {x: 0, y: 0.14754717, z: 0}
---- !u!114 &6947358832155334883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3374982308016098089}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b17886e2120c3648b6f136a25263d25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

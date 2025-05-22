@@ -15,14 +15,17 @@ public class GameManager : MonoBehaviour
     private float SpawnRate = 1.0f;
     public bool isGameActive;
     public Button restartButton;
+    public GameObject titleScreen;
 
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        //isGameActive = false;
-        
+        isGameActive = true;
+        //StartCoroutine(SpawnTarget());
+        //Score = 0;
+
     }
 
     // Update is called once per frame
@@ -33,7 +36,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        Debug.Log("GameOver() called — enabling GameOverText");
+        //Debug.Log("GameOver() called — enabling GameOverText");
         GameOverText.gameObject.SetActive(true);
         isGameActive = false;
         restartButton.gameObject.SetActive(true);
@@ -63,13 +66,12 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void StartGame()
+    public void StartGame(int difficulty)
     {
         StartCoroutine(SpawnTarget());
         Score = 0;
         isGameActive = true;
-
-        //Testing
-        //GameOver();
+        titleScreen.gameObject.SetActive(false);
+        SpawnRate = SpawnRate /  difficulty;
     }
 }
