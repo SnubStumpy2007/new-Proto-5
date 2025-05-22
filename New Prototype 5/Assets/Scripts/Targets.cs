@@ -25,6 +25,7 @@ public class Targets : MonoBehaviour
         gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         //testing to see if it calls.  It doesn't
         //gameManager.GameOver();
+        Debug.Log($"{gameObject.name} spawned at {transform.position}");
     }
 
     // Update is called once per frame
@@ -72,6 +73,6 @@ public class Targets : MonoBehaviour
     }
     Vector3 RandomSpawnPoint()
     {
-        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos);
+        return new Vector3(Random.Range(-xRange, xRange), ySpawnPos, 0);
     }
 }

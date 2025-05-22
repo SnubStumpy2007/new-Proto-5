@@ -15,17 +15,14 @@ public class GameManager : MonoBehaviour
     private float SpawnRate = 1.0f;
     public bool isGameActive;
     public Button restartButton;
+
     
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        StartCoroutine(SpawnTarget());
-        Score = 0;
-        isGameActive = true;
-
-        //Testing
-        //GameOver();
+        //isGameActive = false;
+        
     }
 
     // Update is called once per frame
@@ -57,11 +54,22 @@ public class GameManager : MonoBehaviour
             int index = Random.Range(0, Targets.Count);
             Instantiate(Targets[index]);
             //UpdateScore(5);
+            Debug.Log("Spawing targets");
         }
     }
 
     public void RestartGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void StartGame()
+    {
+        StartCoroutine(SpawnTarget());
+        Score = 0;
+        isGameActive = true;
+
+        //Testing
+        //GameOver();
     }
 }

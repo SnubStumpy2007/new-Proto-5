@@ -61,7 +61,9 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.0.44f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Difficulty.cs" />
     <Compile Include="Assets\Course Library\_Source_Files\Scripts\DestroyAfterDelay.cs" />
+    <Compile Include="Assets\Scripts\TargetSpawnLogger.cs" />
     <Compile Include="Assets\Scripts\Targets.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
   </ItemGroup>

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1422078696896956400}
   - component: {fileID: 3548002243325968876}
   - component: {fileID: 3730159157217851059}
+  - component: {fileID: 6267267505353775044}
   m_Layer: 0
   m_Name: Death
   m_TagString: Bad
@@ -175,3 +176,15 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.42606845, y: 0.60958624, z: 0.44799495}
   m_Center: {x: -0.000000014901161, y: 0.08079566, z: 0.000000052154064}
+--- !u!114 &6267267505353775044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922655240203691093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b17886e2120c3648b6f136a25263d25, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
