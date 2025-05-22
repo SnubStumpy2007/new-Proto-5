@@ -1,4 +1,4 @@
-# Click Target Game
+# Click Target Game (A Unity Junior Developer Certificaton Tutorial project)
 
 A simple Unity clicker game where players click on various targets to score points while avoiding bombs. The game features three difficulty levels that affect the spawn rate of targets.
 
